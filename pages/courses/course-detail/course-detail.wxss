@@ -1,0 +1,377 @@
+.district {
+  background: #f7f7f7;
+  font-size: 30rpx;
+  font-weight: bold;
+  height: 84rpx;
+  line-height: 84rpx;
+  padding: 0 30rpx;
+  position: sticky;
+}
+.video-item {
+  font-size: 28rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  margin: 0 20rpx;
+  padding: 0 10rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+.video-item .watchBtn {
+  font-size: 24rpx;
+  color: #808080;
+  float: right;
+}
+.play {
+  width: 36rpx;
+  height: 36rpx;
+  float: right;
+  margin-top: 20rpx;
+}
+.examBox {
+  background: #ffffff;
+  border-radius: 12rpx;
+  border: 1px solid #DBDBDB;
+  padding: 46rpx 30rpx 46rpx 40rpx;
+}
+.examBox .exam-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30rpx;
+}
+.examBox .exam-top .exam-title {
+  color: #343434;
+  font-size: 36rpx;
+  font-family: STHeiti;
+  font-weight: 500;
+  vertical-align: bottom;
+}
+.examBox .exam-top .exam-start {
+  font-size: 24rpx;
+  background: url(/imgs/icon/arrowRt.png) center right no-repeat;
+  background-size: 12rpx 21rpx;
+  padding-right: 20rpx;
+  color: #999999;
+}
+.examBox .exam-desc {
+  display: block;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #808080;
+}
+.exercise {
+  margin-bottom: 30rpx;
+}
+.record-container {
+  color: #808080;
+  background: #ffffff;
+}
+.record-container view {
+  height: 84rpx;
+  line-height: 84rpx;
+}
+.record-container view text {
+  display: inline-block;
+  text-align: center;
+}
+.record-container .date {
+  width: 46%;
+}
+.record-container .score {
+  width: 27%;
+}
+.record-container .useTime {
+  width: 27%;
+}
+.record-container .record-title {
+  background: #f7f7f7;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+}
+.record-container .record-content {
+  margin: 0 30rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+  font-size: 24rpx;
+}
+.record-container .record-content .score {
+  font-weight: bold;
+}
+.no_info {
+  font-size: 24rpx;
+  color: #808080;
+  margin-top: 60rpx;
+}
+.nothingBox {
+  height: 100%;
+  text-align: center;
+}
+.nothingBox image {
+  margin-top: 240rpx;
+  width: 233rpx;
+  height: 189rpx;
+}
+page {
+  background: #efeff4;
+}
+.nothingBox {
+  background: #ffffff;
+}
+.nothingBox image {
+  margin-top: 100rpx;
+}
+.course-detail-container {
+  color: #333;
+}
+.detail-head {
+  position: relative;
+  height: 88rpx;
+  background: #ffffff;
+  line-height: 88rpx;
+  text-align: center;
+  border-bottom: 1px solid #ff7f3a;
+}
+.detail-head .detail-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30rpx;
+  width: 15rpx;
+  height: 28rpx;
+  display: inline-block;
+}
+.detail-head .detail-title {
+  font-size: 34rpx;
+  color: #333;
+}
+.detail-head .share-redPacket {
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+}
+.detail-head .share-redPacket image {
+  width: 47rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.detail-head .share-redPacket text {
+  display: inline-block;
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  width: 40rpx;
+  line-height: 20rpx;
+  vertical-align: middle;
+}
+.detail-content .detail-banner {
+  width: 100%;
+  height: 320rpx;
+}
+.detail-content .detail-tab {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1rpx solid #DCDCDC;
+  background: #ffffff;
+  height: 86rpx;
+  line-height: 86rpx;
+}
+.detail-content .detail-tab text {
+  text-align: center;
+  font-size: 28rpx;
+  color: #808080;
+  width: 100%;
+}
+.active-tab {
+  color: #ff7f3a !important;
+}
+.detail-foot {
+  height: 120rpx;
+  background-color: #F7F7F7;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #E3E3E3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.detail-foot button {
+  width: 260rpx;
+  height: 72rpx;
+  vertical-align: middle;
+  line-height: 72rpx;
+  font-size: 30rpx;
+}
+.detail-foot .inviteBtn {
+  background: #ffffff;
+  color: #ff7f3a;
+  border: 1px solid #ff7f3a;
+}
+.detail-foot .buyBtn {
+  color: #ffffff;
+  background: #ff7f3a;
+}
+.detail-own-innerContent {
+  height: 700rpx;
+}
+.detail-innerContent {
+  height: 580rpx;
+}
+video {
+  width: 100%;
+  height: 320rpx;
+}
+.tempalteBox {
+  height: 100%;
+}
+#examination {
+  padding: 30rpx 20rpx 0;
+}
+#records {
+  background: #ffffff;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 990;
+  background: rgba(0, 0, 0, 0.5);
+}
+.mask .popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 991;
+  min-height: 50rpx;
+  text-align: center;
+  background: #f7f7f7;
+}
+.mask .popup .popupText {
+  background: #fff;
+  font-size: 24rpx;
+  padding: 56rpx 76rpx;
+}
+.mask .popup .popupText .popupTitle {
+  display: block;
+  font-weight: bold;
+  font-size: 32rpx;
+  margin-bottom: 18rpx;
+}
+.mask .popup .popupText .popupDesc {
+  display: block;
+  color: #808080;
+  padding-bottom: 42rpx;
+  border-bottom: 1px dashed #e5e5e5;
+  margin-bottom: 44rpx;
+}
+.mask .popup .popupText .codeBox label {
+  color: #ff7f3a;
+  opacity: .9;
+  font-size: 28rpx;
+}
+.mask .popup .popupText .codeBox #invitationCode {
+  display: inline-block;
+  width: 260rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  margin-left: 24rpx;
+  padding: 0 18rpx;
+  border: 1px solid #ff7f3a;
+  opacity: .7;
+  text-align: left;
+}
+.mask .popup .button {
+  background: #f7f7f7;
+  padding: 24rpx 0;
+}
+.mask .popup .button #cancel {
+  border: 1px solid #dddddd;
+  color: #808080;
+  margin-right: 80rpx;
+}
+.mask .popup .button #confirm {
+  background: #ff7f3a;
+  color: #fff;
+  border-width: 0px;
+}
+.mask .popup .button button {
+  display: inline-block;
+  width: 260rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  font-size: 30rpx;
+}
+#close {
+  position: absolute;
+  width: 24rpx;
+  padding: 20rpx;
+  height: 24rpx;
+  right: 0;
+  top: 0;
+  background: url(/imgs/close.png) no-repeat center;
+  background-size: 24rpx;
+}
+.shareRedPacket-pop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 200;
+  text-align: center;
+}
+.shareRedPacket-pop .shareArrow {
+  position: absolute;
+  right: 20rpx;
+  padding-top: 140rpx;
+  background: url(/imgs/shareArrow.png) no-repeat;
+  background-size: 94rpx 111rpx;
+  background-position: 28rpx 20rpx;
+  font-size: 30rpx;
+  color: #FFFFFF;
+}
+.shareRedPacket-pop image {
+  width: 488rpx;
+  height: 452rpx;
+  margin: 50rpx auto 40rpx;
+}
+.shareRedPacket-pop .activityRules {
+  text-align: left;
+  padding: 0 40rpx;
+}
+.shareRedPacket-pop .activityRules .rulesTitle {
+  font-size: 30rpx;
+  color: #FFAC00;
+  margin-bottom: 14rpx;
+}
+.shareRedPacket-pop .activityRules .rulesBox {
+  font-size: 24rpx;
+}
+.shareRedPacket-pop .activityRules .rulesBox .ruleItem {
+  text-align: justify;
+  line-height: 52rpx;
+  color: #FFFFFF;
+  padding-left: 36rpx;
+  position: relative;
+}
+.shareRedPacket-pop .activityRules .rulesBox .ruleItem:before {
+  content: "";
+  width: 10rpx;
+  height: 10rpx;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 20rpx;
+  border-radius: 50%;
+}

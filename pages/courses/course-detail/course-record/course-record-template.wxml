@@ -1,0 +1,28 @@
+<import src="../../../template/nothing/nothing-template.wxml"/>
+
+<template name="recordTemplate">
+  <view hidden="{{hasScores}}">
+    <template is="nothingTemplate" data="{{nothingTips}}"/>
+  </view>
+  <view hidden="{{!hasScores}}" class="record-container">
+    <view class="record-title">
+      <text class="date">时间</text>
+      <text class="score">分数</text>
+      <text class="useTime">用时</text>
+    </view>
+    <block wx:for="{{scores}}" wx:for-item="score" wx:key="">
+      <view class="record-content">
+        <text class="date">{{score.startTime}}</text>
+        <text class="score">{{score.score}}分</text>
+        <text class="useTime">{{score.useTime}}</text>
+      </view>
+    </block>
+  </view>
+</template>
+
+<wxs module="foo">
+  var some_msg = "hello world";
+  module.exports = {
+  msg : some_msg,
+  }
+</wxs>

@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "code": 0,
+  "msg": "成功",
+  "toUrl": null,
+  "jsonData": {
+    "headImg": "http://wx.qlogo.cn/mmopen/1QT1ZldaMN2ViaNSTR8W3Goria5uLZJrRE87ncsfxufAeQyiaibgKcNmouXTMblXGm0XnoicqObokxtJ0hIpIboSHy9FsVnt0iaszY/0",
+    "nickname": "龙哥哈哈哈",
+    "username": null,
+    "certType": null,
+    "certNo": "310 ****** 664",
+    "status": "00",
+    "education": null,
+    "inviteCode": "00879",
+    "mobile": "15026856424"
+  }
+}

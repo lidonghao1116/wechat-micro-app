@@ -1,0 +1,286 @@
+@import "course-video/course-video-template.less";
+@import "course-exam/course-exam-template.less";
+@import "course-record/course-record-template.less";
+@import "../../template/nothing/nothing-template";
+
+@baseC:#ff7f3a;
+page{
+  background: #efeff4;
+}
+.nothingBox{
+  background: #ffffff;
+  image{
+    margin-top:100rpx;
+  }
+}
+.baseSize(@w:100%,@h:320rpx){
+  width:@w;
+  height:@h;
+}
+.btnBase(@w:260rpx,@h:72rpx,@br:4rpx,@tc:center){
+  display: inline-block;
+  width: @w;
+  height:@h;
+  line-height: @h;
+  //border-radius: @br;
+  text-align:center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.course-detail-container{
+  color: #333;
+}
+.detail-head{
+  position: relative;
+  height:88rpx;
+  background: #ffffff;
+  line-height:88rpx;
+  text-align: center;
+  border-bottom:1px solid #ff7f3a;
+  .detail-nav{
+    position: absolute;
+    left:0;
+    top:0;
+    padding:30rpx;
+    //background: url("/imgs/icon/iconback.png") no-repeat center;
+    //background-size: 15rpx 28rpx;
+    width:15rpx;
+    height:28rpx;
+    display: inline-block;
+  }
+  .detail-title{
+    font-size: 34rpx;
+    color: #333;
+  }
+  .share-redPacket{
+    position: absolute;
+    right: 30rpx;
+    top:0;
+    image{
+      width:47rpx;
+      height:40rpx;
+      vertical-align: middle;
+    }
+    text{
+      display: inline-block;
+      margin-left:10rpx;
+      font-size: 20rpx;
+      width:40rpx;
+      line-height:20rpx;
+      vertical-align: middle;
+    }
+  }
+}
+
+.detail-content{
+  .detail-banner{
+    .baseSize;
+  }
+  .detail-tab{
+    display: flex;
+    justify-content:space-around;
+    border-bottom: 1rpx solid #DCDCDC;
+    background: #ffffff;
+    height:86rpx;
+    line-height:86rpx;
+    text{
+      text-align: center;
+      font-size: 28rpx;
+      color: #808080;
+      width: 100%;
+    }
+  }
+}
+.active-tab{
+  color: @baseC!important;
+}
+.detail-foot{
+  height:120rpx;
+  background-color: #F7F7F7;
+  //padding: 1.2rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #E3E3E3;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  button{
+    width:260rpx;
+    height:72rpx;
+    vertical-align: middle;
+    line-height:72rpx;
+    font-size: 30rpx;
+  }
+  .inviteBtn{
+    background: #ffffff;
+    color: @baseC;
+    border: 1px solid @baseC;
+  }
+  .buyBtn{
+    color: #ffffff;
+    background: @baseC;
+  }
+}
+.detail-own-innerContent{
+  height:700rpx;
+}
+.detail-innerContent{
+  height:580rpx;
+}
+video{
+  .baseSize;
+}
+.tempalteBox{
+  height:100%;
+}
+#examination{
+  padding: 30rpx 20rpx 0;
+}
+#records{
+  background: #ffffff;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 990;
+  background: rgba(0, 0, 0, 0.5);
+  //display: none;
+  .popup {
+    //display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 991;
+    min-height: 50rpx;
+    text-align: center;
+    background: #f7f7f7;
+    .popupText {
+      background: #fff;
+      font-size: 24rpx;
+      padding: 56rpx 76rpx;
+      .popupTitle{
+        display: block;
+        font-weight: bold;
+        font-size: 32rpx;
+        margin-bottom: 18rpx;
+      }
+      .popupDesc{
+        display: block;
+        color: #808080;
+        padding-bottom: 42rpx;
+        border-bottom: 1px dashed #e5e5e5;
+        margin-bottom: 44rpx;
+      }
+      .codeBox{
+        label {
+          color: #ff7f3a;
+          opacity: .9;
+          font-size: 28rpx;
+        }
+        #invitationCode {
+          .btnBase;
+          vertical-align: middle;
+          margin-left: 24rpx;
+          padding: 0 18rpx;
+          border: 1px solid #ff7f3a;
+          opacity: .7;
+          text-align: left;
+        }
+      }
+    }
+    .button {
+      background: #f7f7f7;
+      padding: 24rpx 0;
+      #cancel {
+        border: 1px solid #dddddd;
+        color: #808080;
+        margin-right: 80rpx;
+      }
+      #confirm {
+        //border-radius: .1rem;
+        background: #ff7f3a;
+        color: #fff;
+        border-width: 0px;
+      }
+      button {
+        .btnBase;
+        background: #fff;
+        font-size: 30rpx;
+      }
+    }
+  }
+}
+
+#close {
+  position: absolute;
+  width: 24rpx;
+  padding: 20rpx;
+  height: 24rpx;
+  right: 0;
+  top: 0;
+  background: url(/imgs/close.png) no-repeat center;
+  background-size: 24rpx;
+}
+
+//红包遮罩层
+.shareRedPacket-pop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 200;
+  text-align: center;
+  .shareArrow {
+    position: absolute;
+    right: 20rpx;
+    padding-top: 140rpx;
+    background: url(/imgs/shareArrow.png) no-repeat;
+    background-size: 94rpx 111rpx;
+    background-position: 28rpx 20rpx;
+    font-size: 30rpx;
+    color: #FFFFFF;
+  }
+  image {
+    width: 488rpx;
+    height: 452rpx;
+    margin: 50rpx auto 40rpx;
+  }
+  .activityRules {
+    text-align: left;
+    padding: 0 40rpx;
+    .rulesTitle{
+      font-size: 30rpx;
+      color: #FFAC00;
+      margin-bottom: 14rpx;
+    }
+    .rulesBox{
+      font-size: 24rpx;
+      .ruleItem{
+        text-align: justify;
+        line-height: 52rpx;
+        color: #FFFFFF;
+        padding-left: 36rpx;
+        position: relative;
+        &:before{
+          content: "";
+          width:10rpx;
+          height:10rpx;
+          background: #ffffff;
+          position: absolute;
+          left: 0;
+          top:20rpx;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

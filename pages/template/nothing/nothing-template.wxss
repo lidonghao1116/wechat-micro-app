@@ -1,0 +1,14 @@
+.no_info {
+  font-size: 24rpx;
+  color: #808080;
+  margin-top: 60rpx;
+}
+.nothingBox {
+  height: 100%;
+  text-align: center;
+}
+.nothingBox image {
+  margin-top: 240rpx;
+  width: 233rpx;
+  height: 189rpx;
+}

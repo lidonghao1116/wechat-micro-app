@@ -1,0 +1,56 @@
+.scoresBtn {
+  margin-top: 80rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  text-align: center;
+  overflow: hidden;
+  margin-left: -4%;
+}
+.scoresBtn .answerTips {
+  height: 40rpx;
+  margin-bottom: 60rpx;
+  font-size: 32rpx;
+}
+.scoresBtn .col-50 {
+  width: 46%;
+  margin-left: 4%;
+  float: left;
+}
+.scoresBtn .col-50 .button {
+  display: inline-block;
+  height: 72rpx;
+  line-height: 72rpx;
+  padding: 0 40rpx;
+  color: #f0854b;
+  font-size: 28rpx;
+}
+.wrong {
+  color: red;
+}
+.correct {
+  color: green;
+}
+.white_btn {
+  border: 1rpx solid #f0854b;
+  color: #f0854b !important;
+  background-color: #fff!important;
+}
+.button-fill {
+  color: #fff!important;
+  background: #f0854b !important;
+}
+.button_box {
+  margin-top: 40rpx;
+  padding: 0 60rpx;
+}
+.button_box .button-big {
+  font-size: 34rpx;
+  height: 96rpx;
+  line-height: 96rpx;
+}
+.button_box .button {
+  width: 100%;
+  background: #f0854b;
+  border-radius: 8rpx;
+  text-align: center;
+}

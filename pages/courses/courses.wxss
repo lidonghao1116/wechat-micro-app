@@ -1,0 +1,99 @@
+.courses-container {
+  background: #ffffff;
+}
+.courses-container .courses-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 86rpx;
+  font-size: 30rpx;
+  background: #ffffff;
+}
+.courses-container .courses-bar .courses-tab {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  line-height: 86rpx;
+}
+.courses-container .courses-list {
+  margin-top: 86rpx;
+  height: 1200rpx;
+}
+.courses-container .courses-list .bannerImg {
+  height: 164rpx;
+  width: 100%;
+}
+.courses-container .courses-list .course-container {
+  padding: 0 30rpx 200rpx;
+}
+.courses-container .courses-list .course-container .course-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 30rpx 0 40rpx;
+}
+.courses-container .courses-list .course-container .course-item image {
+  width: 164rpx;
+  height: 210rpx;
+}
+.courses-container .courses-list .course-container .course-item .course-right {
+  flex-grow: 1;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+.courses-container .courses-list .course-container .course-item .course-right .course-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20rpx;
+}
+.courses-container .courses-list .course-container .course-item .course-right .course-head .course-name {
+  font-size: 32rpx;
+  color: #333;
+  font-family: "黑体";
+}
+.courses-container .courses-list .course-container .course-item .course-right .course-head .course-price {
+  font-size: 28rpx;
+  color: #f8510a;
+}
+.courses-container .courses-list .course-container .course-item .course-right .course-fit {
+  font-size: 24rpx;
+  color: #666;
+}
+.courses-container .courses-list .course-container .course-item .course-right .course-bottom {
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  color: #808080;
+}
+.courses-container .courses-list .course-container .course-item .course-right .course-bottom .course-label {
+  display: inline-block;
+  margin-right: 20rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  border-radius: 14rpx;
+  text-align: center;
+  font-size: 20rpx;
+  padding: 0 20rpx;
+}
+.courses-container .courses-list .course-container .course-item .course-right .course-bottom .course-column {
+  margin-top: 20rpx;
+}
+.courses-container .courses-list .course-container .course-item .course-right .course-bottom .lab01 {
+  background: #f2a300;
+  color: #fff;
+}
+.courses-container .courses-list .course-container .course-item .course-right .course-bottom .lab02 {
+  border: 1px solid #f2a300;
+  color: #f2a300;
+}
+.active-tab {
+  font-size: 32rpx;
+  color: #ff7f3a;
+  font-weight: bold;
+}

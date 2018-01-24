@@ -1,0 +1,52 @@
+.detail-head {
+  position: relative;
+  height: 88rpx;
+  background: #ffffff;
+  line-height: 88rpx;
+  text-align: center;
+  border-bottom: 1px solid #ff7f3a;
+}
+.detail-head .detail-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30rpx;
+  width: 15rpx;
+  height: 28rpx;
+  display: inline-block;
+}
+.detail-head .detail-title {
+  font-size: 34rpx;
+  color: #333;
+}
+.detail-head .detail-title .logo {
+  width: 36rpx;
+  height: 36rpx;
+}
+.detail-head .share-redPacket {
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+}
+.detail-head .share-redPacket image {
+  width: 47rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.detail-head .share-redPacket text {
+  display: inline-block;
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  width: 40rpx;
+  line-height: 20rpx;
+  vertical-align: middle;
+}
+.detail-head .moreCert {
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+  display: block;
+  height: 100%;
+  line-height: 88rpx;
+  color: #ff7f3a;
+}

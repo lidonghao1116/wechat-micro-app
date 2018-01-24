@@ -1,0 +1,23 @@
+<template name="courseListTemplate">
+  <view class="course-item" catchtap="onCourseDetailTap" data-courseid="{{courseId}}">
+    <image src="{{image}}"></image>
+    <view class="course-right">
+      <view class="course-head">
+        <text class="course-name">{{courseName}}</text>
+        <text class="course-price" wx:if="{{isOwn==0}}">￥{{price}}/永久</text>
+        <text class="course-price" wx:else>已购买</text>
+      </view>
+      <text class="course-fit">适合工种：{{fitService}}</text>
+      <view class="course-bottom">
+        <view>
+          <view class="course-label lab01">膳食</view>
+          <text class="course-describe">健康膳食、科学喂养</text>
+        </view>
+        <view class="course-column">
+          <view class="course-label lab02">日常</view>
+          <text class="course-describe">新生儿护理、常见病预防</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

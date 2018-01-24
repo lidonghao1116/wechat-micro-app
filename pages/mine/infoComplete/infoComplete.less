@@ -1,0 +1,69 @@
+@import "../../template/head/head-template";
+
+.info_banner{
+  image{
+    width:100%;
+    height:230rpx;
+  }
+}
+.info_enter {
+  padding: 0 30rpx;
+  background-color: #fff;
+  .info_title{
+    padding: 40rpx 0;
+    line-height: 40rpx;
+    color: #333333;
+    font-size: 32rpx;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .info_list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 30rpx 0;
+    line-height: 38rpx;
+    label {
+      flex: 0 0 auto;
+      vertical-align: middle;
+      font-size: 30rpx;
+      color: #808080;
+      margin-left: 10rpx;
+    }
+    .intWrapper{
+      display: inline-block;
+      width: 100%;
+      input {
+        font-size: 30rpx;
+        line-height: 38rpx;
+        border: none;
+        width: 100%;
+        &:focus{
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+.selCertificate input {
+  background: url(/imgs/icon/righticon.png) no-repeat;
+  background-position: right center;
+  background-size: 16rpx 28rpx;
+}
+.savebtn {
+  padding: 0 30rpx;
+  margin-top: 98rpx;
+  margin-bottom: 100rpx;
+  text-align: center;
+  button{
+      width: 100%;
+      border: 1px solid #ff7f3a;
+      font-size: 32rpx;
+      color: #fff;
+      background-color: #ff7f3a;
+      border-radius: 6rpx;
+      height: 82rpx;
+  }
+}

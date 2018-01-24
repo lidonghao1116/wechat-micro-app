@@ -1,0 +1,40 @@
+<import src="../../template/nothing/nothing-template.wxml"/>
+<import src="../../template/head/head-template.wxml"/>
+
+
+
+<view class="head">
+  <template is="headTemplate" data="{{pageName,isSharePage}}"/>
+</view>
+<template is="nothingTemplate" wx:if="{{initNothing}}" data="{{nothingTips}}"></template>
+
+<view class="record_box">
+  <block wx:for="{{records}}" wx:for-item="record" wx:key="">
+    <view class="record">
+      <view class="certificate_tt">
+        <view class="dot"></view>
+        {{record.courseName}}
+        <text class="{{record.signStatus=='02'?'baoming':record.signStatus=='04'?'tuixue':''}}">{{record.signValue}}</text>
+      </view>
+      <view class="certSubtitle">{{record.packageName}}</view>
+      <view class="record_info">
+        <view>
+          <text>报名时间</text>
+          {{record.signDate}}
+        </view>
+        <view>
+          <text>学习周期</text>
+          {{record.learnCycle}} 课时
+        </view>
+        <view>
+          <text>考核形式</text>
+          {{record.examForm}}
+        </view>
+        <view>
+          <text>培训学校</text>
+          {{record.school}}
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

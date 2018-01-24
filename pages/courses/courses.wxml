@@ -1,0 +1,16 @@
+<import src="course-list/course-list-template.wxml"/>
+
+<view class="courses-container">
+  <view class="courses-bar">
+    <view class="courses-tab {{!isactiveTab?'active-tab':''}}" catchtap="onCourseTap" id="courses-purchase">已购课程</view>
+    <view class="courses-tab {{isactiveTab?'active-tab':''}}" catchtap="onCourseTap" id="courses-recommend" >推荐课程</view>
+  </view>
+  <scroll-view class="courses-list" scroll-y="true">
+    <image src="/imgs/bannercourse.png" class="bannerImg" lazyload="true"/>
+    <view class="course-container">
+      <block wx:for="{{courses}}" wx:for-item="courses" wx:key="courseId">
+        <template is="courseListTemplate" data="{{...courses}}"></template>
+      </block>
+    </view>
+  </scroll-view>
+</view>

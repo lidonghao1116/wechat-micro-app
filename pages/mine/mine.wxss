@@ -1,0 +1,84 @@
+page {
+  background: #efeff4;
+}
+.mine-container .mine-top {
+  height: 280rpx;
+  background: linear-gradient(to right, #ff8447, #ff9f46);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mine-container .mine-top #myInfoLink {
+  display: flex;
+  flex-direction: column;
+}
+.mine-container .mine-top .mine-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+  margin: 52rpx auto 30rpx;
+}
+.mine-container .mine-top .mine-detail {
+  color: #ffffff;
+  font-size: 28rpx;
+}
+.mine-container .main-content {
+  background: #ffffff;
+  padding: 0 20rpx;
+}
+.mine-container .main-content .main-box {
+  position: relative;
+  height: 98rpx;
+  line-height: 98rpx;
+}
+.mine-container .main-content .main-box:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+.mine-container .main-content .main-box text {
+  margin-left: 82rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.mine-container .main-content .main-box:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url("/imgs/icon/righticon.png") no-repeat center center;
+  background-size: contain;
+  width: 16rpx;
+  height: 98rpx;
+}
+.mine-container .main-content .main-box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 98rpx;
+}
+.mine-container .main-content .xxdj:before {
+  background: url("/imgs/icon/iconxuexi.png") no-repeat center center;
+  background-size: contain;
+  left: 20rpx;
+  width: 33rpx;
+}
+.mine-container .main-content .pxjl:before {
+  background: url("/imgs/icon/iconpeixun.png") no-repeat center center;
+  background-size: contain;
+  left: 14rpx;
+  width: 40rpx;
+}
+.mine-container .main-content .wdzs:before {
+  background: url("/imgs/icon/iconzhengshu.png") no-repeat center center;
+  background-size: contain;
+  left: 20rpx;
+  width: 33rpx;
+}
+.mine-container .main-content .wdhb:before {
+  background: url("/imgs/icon/iconhongbao.png") no-repeat center center;
+  background-size: contain;
+  left: 20rpx;
+  width: 32rpx;
+}
+.last-list {
+  margin-top: 24rpx;
+}

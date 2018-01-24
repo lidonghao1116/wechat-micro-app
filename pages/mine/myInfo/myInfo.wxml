@@ -1,0 +1,57 @@
+<import src="../../template/head/head-template.wxml"/>
+
+<view id="myInfo">
+  <view class="head">
+    <template is="headTemplate" data="{{pageName}}"/>
+  </view>
+  <view class="my_info_box">
+    <view class="img_info">
+      <label>头像：</label>
+      <view class="info_right">
+        <image src="{{infos.avatar}}" />
+      </view>
+    </view>
+  </view>
+  <view class="my_info_box">
+    <view class="my_info">
+      <label>昵称：</label>
+      <view class="info_right">
+        <input type="text" name="nickName" value="{{infos.nickname}}" disabled="{{isDisabled}}" focus="{{isFocus}}" bindinput="onValueInput"/>
+        <view class="btnRight" id="revised" bindtap="onModifyTap" wx:if="{{showModify}}">修改</view>
+        <view class="btnRight" id="save" bindtap="onModifyTap" wx:else>保存</view>
+      </view>
+    </view>
+    <view class="my_info border_n">
+      <label>手机号：</label>
+      <view class="info_right">
+        <text id="mobile">{{infos.mobile}}</text>
+        <navigator class="btnRight" id="register" wx:if="{{!isLogin}}">注册</navigator>
+      </view>
+    </view>
+  </view>
+  <view class="my_info_box">
+    <view class="my_info">
+      <label>真实姓名：</label>
+      <view class="info_right">
+        <text id="nickName">{{infos.username}}</text>
+        <navigator url="/pages/mine/infoComplete/infoCOmplete" wx:if="{{incomplete}}">完善个人信息</navigator>
+      </view>
+    </view>
+    <view class="my_info border_n">
+      <label>身份证号：</label>
+      <view class="info_right">
+        <text id="certNo">{{infos.certNo}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="my_info_box">
+    <view class="my_info border_n">
+      <label>邀请码：</label>
+      <view class="info_right">
+        <text class="code" id="inviteCode" style="color:{{isLogin?'#333':'#dbdbdb'}};">{{infos.inviteCode}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+

@@ -1,0 +1,53 @@
+<import src="../../template/nothing/nothing-template.wxml"/>
+<import src="../../template/head/head-template.wxml"/>
+
+
+
+<view class="head">
+  <template is="headTemplate" data="{{pageName,isCertPage}}"/>
+</view>
+<template is="nothingTemplate" wx:if="{{initNothing}}" data="{{nothingTips}}"></template>
+
+
+<view class="content">
+  <block wx:for="{{certs}}" wx:for-item="cert" wx:key="">
+    <view class="certificate">
+      <view class="certificate_tt">
+        <view></view>
+        {{cert.certName}}
+      </view>
+      <view class="result_t">
+        <view class="certlist">
+          <view class="grey">鉴定等级</view>
+          <view class="certValue">{{cert.gradeName}}</view>
+          <view class="grey">综合成绩</view>
+          <view class="">{{cert.comprehensiveScores}}</view>
+        </view>
+        <view class="certlist">
+          <view class="grey">理论成绩</view>
+          <view class="certValue">{{cert.theoryScores}}</view>
+          <view class="grey">能力成绩</view>
+          <view class="">{{cert.abilityScores}}</view>
+        </view>
+        <view class="certlist">
+          <view class="grey">技能成绩</view>
+          <view class="certValue">{{cert.poScores}}</view>
+          <view class="grey">评定结果</view>
+          <view class="">{{cert.examResult}}</view>
+        </view>
+        <view class="certlist">
+          <view class="grey">发证日期</view>
+          <view class="certLValue">{{cert.issuingDate}}</view>
+        </view>
+        <view class="certlist">
+          <view class="grey">证书编号</view>
+          <view class="certLValue">{{cert.certificateNo}}</view>
+        </view>
+        <view class="certlist">
+          <view class="grey">发证机构</view>
+          <view class="certLValue">{{cert.certOrgName}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

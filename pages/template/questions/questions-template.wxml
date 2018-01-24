@@ -1,0 +1,35 @@
+<import src="/pages/template/btn/btn-template.wxml"/>
+
+<template name="questionsTemplate">
+  <view class="questionsBox">
+    <view class="content-block-title">{{result}}{{question}}</view>
+    <view class="list-block media-list">
+      <view class="answer">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <block wx:for="{{answers}}" wx:for-item="answer" wx:key="" wx:for-index="i">
+            <label class="radio label-checkbox item-content">
+              <view class="item-media">
+                <radio value="{{i}}" data-isAnswer="{{answer.isAnswer}}" data-id="{{answer.id}}" disabled="{{isDisabled}}" checked="{{isChecked}}"/>
+              </view>
+              <view class="item-inner">
+                <view class="item-text">
+                  <text>{{mode.num[i]}}.</text>
+                  {{answer.answerDesc}}
+                </view>
+              </view>
+            </label>
+          </block>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+  <template is="{{testTemplate?'btnTestTemplate':'btnQsTemplate'}}" data="{{isDisabled,isCorrect,correctTxt,isSave}}"/>
+</template>
+<wxs module="mode">
+  var M = [
+  "A", "B", "C", "D", "E", "F", "G", "H", "I"
+  ];
+  module.exports = {
+  num : M,
+  }
+</wxs>

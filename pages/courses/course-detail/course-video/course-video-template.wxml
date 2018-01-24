@@ -1,0 +1,10 @@
+<template name="videoTemplate">
+  <block wx:for="{{videos}}" wx:for-item="video" wx:key="">
+    <view class="district">{{video.videoDesc}}</view>
+    <view class="video-item" catchtap="onVideoTap" data-own="{{isOwn}}" data-guestWatch="{{video.isGuestWatch}}">
+      {{video.videoName}}
+      <view class="watchBtn" wx:if="{{video.isGuestWatch==1&&isOwn==0}}">试看</view>
+      <image src="/imgs/icon/playbtn.png" class="play" wx:elif="{{video.isGuestWatch==0||isOwn==1}}"></image>
+    </view>
+  </block>
+</template>

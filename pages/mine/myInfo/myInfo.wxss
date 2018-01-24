@@ -1,0 +1,113 @@
+.detail-head {
+  position: relative;
+  height: 88rpx;
+  background: #ffffff;
+  line-height: 88rpx;
+  text-align: center;
+  border-bottom: 1px solid #ff7f3a;
+}
+.detail-head .detail-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30rpx;
+  width: 15rpx;
+  height: 28rpx;
+  display: inline-block;
+}
+.detail-head .detail-title {
+  font-size: 34rpx;
+  color: #333;
+}
+.detail-head .detail-title .logo {
+  width: 36rpx;
+  height: 36rpx;
+}
+.detail-head .share-redPacket {
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+}
+.detail-head .share-redPacket image {
+  width: 47rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.detail-head .share-redPacket text {
+  display: inline-block;
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  width: 40rpx;
+  line-height: 20rpx;
+  vertical-align: middle;
+}
+.detail-head .moreCert {
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+  display: block;
+  height: 100%;
+  line-height: 88rpx;
+  color: #ff7f3a;
+}
+.my_info_box {
+  padding: 0 30rpx;
+  background-color: #fff;
+  margin-top: 24rpx;
+}
+.my_info_box .img_info label {
+  padding: 40rpx 0;
+}
+.my_info_box .img_info .info_right {
+  height: 120rpx;
+  padding: 0 0 0 140rpx;
+}
+.my_info_box .img_info .info_right image {
+  width: 84rpx;
+  height: 84rpx;
+  display: inline-block;
+  margin-top: 18rpx;
+  /* border-radius: 100%; */
+}
+.my_info_box label {
+  padding: 28rpx 0;
+  float: left;
+  width: 150rpx;
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: #808080;
+}
+.my_info_box .info_right {
+  padding: 28rpx 140rpx;
+  line-height: 40rpx;
+  position: relative;
+  font-size: 30rpx;
+}
+.my_info_box .info_right input {
+  line-height: 40rpx;
+  width: 90%;
+  -webkit-appearance: none;
+  border: none;
+  font-size: 28rpx;
+}
+.btnRight {
+  position: absolute;
+  right: 0;
+  font-size: 28rpx;
+  color: #ff7f3a;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: right;
+  top: 20rpx;
+}
+.my_info {
+  overflow: hidden;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.border_n {
+  border-bottom: 0;
+}
+#inviteCode {
+  color: #dbdbdb;
+}

@@ -1,0 +1,16 @@
+<template name="headTemplate">
+  <view class="detail-head">
+    <image src="/imgs/icon/iconback.png" class="detail-nav" bindtap="onbackTap" hidden="{{noBack}}">
+    </image>
+    <view class="detail-title">
+      <image class="logo" src="/imgs/logo.png" wx:if="{{isShowLogo}}"></image>
+      {{pageName}}
+    </view>
+    <navigator wx:if="{{isCertPage}}" class="moreCert" url="">更多查询</navigator>
+    <view class="share-redPacket" catchtap="onShareMaskTap">
+      <image wx:if="{{isSharePage}}" src="/imgs/redpacket.png"></image>
+      <text wx:if="{{isSharePage}}">分享红包</text>
+    </view>
+  </view>
+</template>
+

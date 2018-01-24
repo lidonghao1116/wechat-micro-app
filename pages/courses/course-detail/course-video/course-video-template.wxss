@@ -1,0 +1,28 @@
+.district {
+  background: #f7f7f7;
+  font-size: 30rpx;
+  font-weight: bold;
+  height: 84rpx;
+  line-height: 84rpx;
+  padding: 0 30rpx;
+  position: sticky;
+}
+.video-item {
+  font-size: 28rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  margin: 0 20rpx;
+  padding: 0 10rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+.video-item .watchBtn {
+  font-size: 24rpx;
+  color: #808080;
+  float: right;
+}
+.play {
+  width: 36rpx;
+  height: 36rpx;
+  float: right;
+  margin-top: 20rpx;
+}

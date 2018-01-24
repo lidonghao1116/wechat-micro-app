@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/courses/courses",
+    "pages/courses/course-detail/questions/questions",
+    "pages/courses/course-detail/scores/scores",
+    "pages/courses/course-detail/answerSheets/answerSheets",
+    "pages/courses/course-detail/course-exer/course-exer",
+    "pages/mine/infoComplete/infoComplete",
+    "pages/mine/myInfo/myInfo",
+    "pages/mine/mine",
+    "pages/mine/studyList/studyList",
+    "pages/mine/cert/cert",
+    "pages/mine/trainRecords/trainRecords",
+    "pages/courses/course-detail/course-detail",
+    "pages/register/register",
+    "pages/register/agreement",
+    "pages/mine/redPackets/redPackets",
+    "pages/job/job"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "家策微课堂",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar":{
+    "borderStyle": "white",
+    "position":"bottom",
+    "selectedColor":"#FF7F3A",
+    "list": [
+      {
+        "pagePath": "pages/courses/courses",
+        "text": "在线学堂",
+        "iconPath": "imgs/tab/school1.png",
+        "selectedIconPath": "imgs/tab/school2.png"
+      },
+      {
+        "pagePath": "pages/job/job",
+        "text": "找工作",
+        "iconPath": "imgs/tab/job1.png",
+        "selectedIconPath": "imgs/tab/job2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "imgs/tab/mine1.png",
+        "selectedIconPath": "imgs/tab/mine2.png"
+      }
+    ]
+  }
+}

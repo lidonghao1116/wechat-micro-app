@@ -1,0 +1,116 @@
+.detail-head {
+  position: relative;
+  height: 88rpx;
+  background: #ffffff;
+  line-height: 88rpx;
+  text-align: center;
+  border-bottom: 1px solid #ff7f3a;
+}
+.detail-head .detail-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30rpx;
+  width: 15rpx;
+  height: 28rpx;
+  display: inline-block;
+}
+.detail-head .detail-title {
+  font-size: 34rpx;
+  color: #333;
+}
+.detail-head .detail-title .logo {
+  width: 36rpx;
+  height: 36rpx;
+}
+.detail-head .share-redPacket {
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+}
+.detail-head .share-redPacket image {
+  width: 47rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.detail-head .share-redPacket text {
+  display: inline-block;
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  width: 40rpx;
+  line-height: 20rpx;
+  vertical-align: middle;
+}
+.detail-head .moreCert {
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+  display: block;
+  height: 100%;
+  line-height: 88rpx;
+  color: #ff7f3a;
+}
+.info_banner image {
+  width: 100%;
+  height: 230rpx;
+}
+.info_enter {
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+.info_enter .info_title {
+  padding: 40rpx 0;
+  line-height: 40rpx;
+  color: #333333;
+  font-size: 32rpx;
+  border-bottom: 1px solid #dbdbdb;
+}
+.info_enter .info_list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 30rpx 0;
+  line-height: 38rpx;
+}
+.info_enter .info_list label {
+  flex: 0 0 auto;
+  vertical-align: middle;
+  font-size: 30rpx;
+  color: #808080;
+  margin-left: 10rpx;
+}
+.info_enter .info_list .intWrapper {
+  display: inline-block;
+  width: 100%;
+}
+.info_enter .info_list .intWrapper input {
+  font-size: 30rpx;
+  line-height: 38rpx;
+  border: none;
+  width: 100%;
+}
+.info_enter .info_list .intWrapper input:focus {
+  font-weight: normal;
+}
+.selCertificate input {
+  background: url(/imgs/icon/righticon.png) no-repeat;
+  background-position: right center;
+  background-size: 16rpx 28rpx;
+}
+.savebtn {
+  padding: 0 30rpx;
+  margin-top: 98rpx;
+  margin-bottom: 100rpx;
+  text-align: center;
+}
+.savebtn button {
+  width: 100%;
+  border: 1px solid #ff7f3a;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #ff7f3a;
+  border-radius: 6rpx;
+  height: 82rpx;
+}

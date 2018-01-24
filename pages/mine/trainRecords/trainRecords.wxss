@@ -1,0 +1,117 @@
+.detail-head {
+  position: relative;
+  height: 88rpx;
+  background: #ffffff;
+  line-height: 88rpx;
+  text-align: center;
+  border-bottom: 1px solid #ff7f3a;
+}
+.detail-head .detail-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30rpx;
+  width: 15rpx;
+  height: 28rpx;
+  display: inline-block;
+}
+.detail-head .detail-title {
+  font-size: 34rpx;
+  color: #333;
+}
+.detail-head .detail-title .logo {
+  width: 36rpx;
+  height: 36rpx;
+}
+.detail-head .share-redPacket {
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+}
+.detail-head .share-redPacket image {
+  width: 47rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.detail-head .share-redPacket text {
+  display: inline-block;
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  width: 40rpx;
+  line-height: 20rpx;
+  vertical-align: middle;
+}
+.detail-head .moreCert {
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+  display: block;
+  height: 100%;
+  line-height: 88rpx;
+  color: #ff7f3a;
+}
+.no_info {
+  font-size: 24rpx;
+  color: #808080;
+  margin-top: 60rpx;
+}
+.nothingBox {
+  height: 100%;
+  text-align: center;
+}
+.nothingBox image {
+  margin-top: 240rpx;
+  width: 233rpx;
+  height: 189rpx;
+}
+.record {
+  padding: 36rpx 30rpx 36rpx 40rpx;
+  background-color: #fff;
+  margin-top: 24rpx;
+}
+.record .certificate_tt {
+  font-size: 32rpx;
+  font-weight: bold;
+  padding-bottom: 24rpx;
+}
+.record .certificate_tt .dot {
+  display: inline-block;
+  width: 18rpx;
+  height: 18rpx;
+  background-color: #333;
+  vertical-align: top;
+  margin-right: 18rpx;
+}
+.record .certificate_tt text {
+  display: inline-block;
+  font-size: 24rpx;
+  padding: 0 24rpx;
+  height: 40rpx;
+  float: right;
+  line-height: 40rpx;
+  border-radius: 24rpx;
+}
+.record .certSubtitle {
+  padding-left: 36rpx;
+  color: #808080;
+  margin-bottom: 36rpx;
+}
+.record .record_info {
+  border-top: 1rpx solid #ebebeb;
+}
+.record .record_info view {
+  margin: 36rpx 0;
+}
+.record .record_info view text {
+  margin-left: 36rpx;
+  margin-right: 50rpx;
+  color: #808080;
+}
+.baoming {
+  color: #f2a300;
+  border: 1rpx solid #f2a300;
+}
+.tuixue {
+  color: #f8510a;
+  border: 1rpx solid #f8510a;
+}

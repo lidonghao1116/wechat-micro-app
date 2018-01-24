@@ -1,0 +1,20 @@
+<import src="/pages/template/head/head-template.wxml"/>
+<import src="/pages/template/questions/questions-template.wxml"/>
+<import src="../questionTips/questionTips-template.wxml"/>
+
+<view>
+  <view class="head">
+    <template is="headTemplate" data="{{pageName,noBack}}"/>
+  </view>
+  <view id="tipsBox" wx:if="{{tipsShow}}">
+    <template is="questionTipsTemplate"></template>
+  </view>
+  <view id="qsBox" wx:if="{{!tipsShow}}">
+    <view class="time">剩余时间:
+      <text style="color: #ea2c1d">{{_minutes}}分钟{{_seconds}}秒</text>
+    </view>
+    <view class="question">
+      <template is="questionsTemplate" data="{{...questions,isChecked,isSave}}"></template>
+    </view>
+  </view>
+</view>

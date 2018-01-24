@@ -1,0 +1,58 @@
+@import "../../template/head/head-template";
+@import "../../template/nothing/nothing-template";
+@bc:#ff7f3a;
+.certificate {
+  background-color: #fff;
+  margin-top: 24rpx;
+  padding: 24rpx 0 24rpx 40rpx;
+  &:last-child{
+    margin-bottom: 40rpx;
+  }
+  .certificate_tt {
+    height: 70rpx;
+    line-height: 70rpx;
+    padding-left:40rpx;
+    color: @bc;
+    font-size: 32rpx;
+    font-weight: bold;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width:18rpx;
+      height:18rpx;
+      background: @bc;
+      left: 0;
+      top:24rpx;
+    }
+  }
+  .result_t {
+    width: 100%;
+    margin-top: 26rpx;
+    .certlist{
+      //display: flex;
+      //justify-content: flex-start;
+      margin-bottom: 30rpx;
+      view {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .certValue{
+        width:300rpx;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+        color: #3d3d3d;
+        word-break:keep-all;           /* 不换行 */
+        white-space:nowrap;          /* 不换行 */
+        overflow:hidden;               /* 内容超出宽度时隐藏超出部分的内容 */
+        text-overflow:ellipsis;
+      }
+      .grey {
+        width:140rpx;
+        color: #808080;
+      }
+      .certLValue{
+        .certValue;
+        width:500rpx;
+      }
+    }
+  }
+}

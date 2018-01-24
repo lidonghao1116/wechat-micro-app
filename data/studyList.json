@@ -1,0 +1,278 @@
+{
+  "success": true,
+  "code": 0,
+  "msg": "成功",
+  "toUrl": null,
+  "jsonData": [
+    {
+      "productId": 18,
+      "productName": "母婴护理员【专项】",
+      "summary": "【0基础班】上海市劳动局证书，附赠岗前培训课程。内容包括产妇照料、新生儿护理等",
+      "price": 350.00,
+      "originalPrice": 1500.00,
+      "isDiscount": "1",
+      "status": "04",
+      "workType": "月嫂、育儿嫂"
+    },
+    {
+      "productId": 39,
+      "productName": "母婴护理",
+      "summary": "0基础课程",
+      "price": 400.00,
+      "originalPrice": 1000.00,
+      "isDiscount": "1",
+      "status": "04",
+      "workType": "月嫂"
+    },
+    {
+      "productId": 40,
+      "productName": "育婴师套餐",
+      "summary": "优惠套餐，含母婴课程和育婴师课程",
+      "price": 1000.00,
+      "originalPrice": null,
+      "isDiscount": "0",
+      "status": "05",
+      "workType": "育婴师、月嫂"
+    },
+    {
+      "productId": 42,
+      "productName": "育婴师课程729",
+      "summary": "育婴师初级课程",
+      "price": 900.00,
+      "originalPrice": 1000.00,
+      "isDiscount": "1",
+      "status": "01",
+      "workType": "育婴师"
+    },
+    {
+      "productId": 44,
+      "productName": "家政专项729",
+      "summary": "729",
+      "price": 340.00,
+      "originalPrice": null,
+      "isDiscount": "0",
+      "status": "01",
+      "workType": "钟点工、保姆"
+    },
+    {
+      "productId": 45,
+      "productName": "家政服务员【零基础】",
+      "summary": "【零基础】家政服务员 - 004 测试",
+      "price": 800.00,
+      "originalPrice": 1000.00,
+      "isDiscount": "0",
+      "status": "02",
+      "workType": "家政员"
+    },
+    {
+      "productId": 46,
+      "productName": "育婴师班【零基础】",
+      "summary": "【零基础】育婴师班 - 004 账号测试",
+      "price": 800.00,
+      "originalPrice": 1000.00,
+      "isDiscount": "0",
+      "status": "02",
+      "workType": "育婴师"
+    },
+    {
+      "productId": 48,
+      "productName": "中级育婴师-5",
+      "summary": "中级育婴师  - 005 账号测试",
+      "price": 2000.00,
+      "originalPrice": 2100.00,
+      "isDiscount": "1",
+      "status": "02",
+      "workType": "育婴师"
+    },
+    {
+      "productId": 51,
+      "productName": "育婴师套餐004",
+      "summary": "004测试",
+      "price": 0.00,
+      "originalPrice": null,
+      "isDiscount": "1",
+      "status": "05",
+      "workType": ""
+    },
+    {
+      "productId": 52,
+      "productName": "套餐a:育婴员",
+      "summary": "育婴员课程，劳动局认证课程，考试通过之后发上海市劳动局证书",
+      "price": 1200.00,
+      "originalPrice": null,
+      "isDiscount": "1",
+      "status": "04",
+      "workType": "育儿嫂"
+    },
+    {
+      "productId": 54,
+      "productName": "套餐b:养老护理",
+      "summary": "养老护理员课程，学习和了解老人照顾／护理／常见病预防／健康体征监控与测量等",
+      "price": 1000.00,
+      "originalPrice": 1500.00,
+      "isDiscount": "1",
+      "status": "04",
+      "workType": "老人陪护"
+    },
+    {
+      "productId": 55,
+      "productName": "套餐3：养老护理员",
+      "summary": "测试测试",
+      "price": 890.00,
+      "originalPrice": 1000.00,
+      "isDiscount": "0",
+      "status": "04",
+      "workType": "老人陪护"
+    },
+    {
+      "productId": 56,
+      "productName": "套餐4：母婴护理",
+      "summary": "测试测试",
+      "price": 900.00,
+      "originalPrice": 1200.00,
+      "isDiscount": "0",
+      "status": "04",
+      "workType": "月嫂"
+    },
+    {
+      "productId": 57,
+      "productName": "母婴护理0801",
+      "summary": "母婴护理课程",
+      "price": 900.00,
+      "originalPrice": 1200.00,
+      "isDiscount": "0",
+      "status": "01",
+      "workType": "月嫂"
+    },
+    {
+      "productId": 17,
+      "productName": "家政服务员【专项】",
+      "summary": "家政上岗第一步！家居保洁、家用电器使用、家常菜肴烹饪。",
+      "price": 0.00,
+      "originalPrice": 1420.00,
+      "isDiscount": "1",
+      "status": "01",
+      "workType": "钟点工、保姆、老人陪护"
+    },
+    {
+      "productId": 49,
+      "productName": "育婴师班【零基础-005",
+      "summary": "【零基础】育婴师班 - 005 账号测试",
+      "price": 1002.00,
+      "originalPrice": 2110.00,
+      "isDiscount": "1",
+      "status": "02",
+      "workType": "育婴师"
+    },
+    {
+      "productId": 47,
+      "productName": "中级育婴师",
+      "summary": "中级育婴师  - 004 账号测试",
+      "price": 1000.00,
+      "originalPrice": 1100.00,
+      "isDiscount": "1",
+      "status": "02",
+      "workType": "育婴师"
+    },
+    {
+      "productId": 21,
+      "productName": "育婴师初级",
+      "summary": "上海市劳动局证书，初级育婴师，涉及0-3岁儿童照料、护理和早期智力开发",
+      "price": 1000.00,
+      "originalPrice": 1810.00,
+      "isDiscount": "0",
+      "status": "01",
+      "workType": "育儿嫂、保姆"
+    },
+    {
+      "productId": 30,
+      "productName": "【零基础】高级催乳师",
+      "summary": "了解母乳喂养的概念及方法，正确指导产妇进行科学喂养。",
+      "price": 1600.00,
+      "originalPrice": 2480.00,
+      "isDiscount": "1",
+      "status": "01",
+      "workType": "月嫂、催乳师"
+    },
+    {
+      "productId": 26,
+      "productName": "【进阶班】高级催乳师",
+      "summary": "特聘行业名师，带教上岗，高单必备！运用中医推拿手法，有效解决奶水不足、奶结堵塞等问题",
+      "price": 2200.00,
+      "originalPrice": 3380.00,
+      "isDiscount": "0",
+      "status": "01",
+      "workType": "月嫂、催乳师"
+    },
+    {
+      "productId": 24,
+      "productName": "【优惠套餐A】劳动局双证班",
+      "summary": "0基础上岗必备！初级育婴师和母婴护理员",
+      "price": 1300.00,
+      "originalPrice": 3000.00,
+      "isDiscount": "0",
+      "status": "05",
+      "workType": "育婴员"
+    },
+    {
+      "productId": 29,
+      "productName": "【直通班】高级催乳师",
+      "summary": "全方位了解母乳的科学喂养，及中医推拿手法对特殊情况下的处理。附赠价值1280元家庭营养师课程。",
+      "price": 3800.00,
+      "originalPrice": 5860.00,
+      "isDiscount": "0",
+      "status": "01",
+      "workType": "月嫂、催乳师"
+    },
+    {
+      "productId": 27,
+      "productName": "高级母婴护理师",
+      "summary": "进阶课程，深入了解产妇护理及婴儿辅食",
+      "price": 1680.00,
+      "originalPrice": 1880.00,
+      "isDiscount": "0",
+      "status": "01",
+      "workType": "月嫂、催乳师"
+    },
+    {
+      "productId": 28,
+      "productName": "【优惠套餐B】金牌月嫂套餐",
+      "summary": "超值！高催和高护，再赠月子餐。\n16天让您成为行业达人！",
+      "price": 4880.00,
+      "originalPrice": 768.00,
+      "isDiscount": "0",
+      "status": "01",
+      "workType": "月嫂"
+    },
+    {
+      "productId": 20,
+      "productName": "家庭营养师",
+      "summary": "适合各类人群的营养需求，增添饮食的乐趣，促进身体的健康，并提高生活的质量",
+      "price": 980.00,
+      "originalPrice": 1280.00,
+      "isDiscount": "0",
+      "status": "01",
+      "workType": "家政员、育婴员"
+    },
+    {
+      "productId": 22,
+      "productName": "中级育婴师",
+      "summary": "上海市劳动局证书，报考需持有初级育婴师证书",
+      "price": 1520.00,
+      "originalPrice": 1870.00,
+      "isDiscount": "0",
+      "status": "01",
+      "workType": "育婴员"
+    },
+    {
+      "productId": 43,
+      "productName": "11",
+      "summary": "11",
+      "price": null,
+      "originalPrice": 11.00,
+      "isDiscount": "0",
+      "status": "01",
+      "workType": "11"
+    }
+  ]
+}

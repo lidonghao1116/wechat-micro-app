@@ -1,0 +1,3 @@
+<template name="maskTemplate">
+  <view class="mask" hidden="{{isHidden}}"></view>
+</template>

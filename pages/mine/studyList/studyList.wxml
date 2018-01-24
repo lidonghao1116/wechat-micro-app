@@ -1,0 +1,65 @@
+<import src="../../template/nothing/nothing-template.wxml"/>
+<import src="../../template/head/head-template.wxml"/>
+<import src="../../template/mask/mask-template.wxml"/>
+
+
+<template is="maskTemplate" data="{{isHidden}}"></template>
+
+<view class="studyList-container">
+  <view class="head">
+    <template is="headTemplate" data="{{pageName,isShowLogo}}"/>
+  </view>
+  <template is="nothingTemplate" wx:if="{{initNothing}}" data="{{nothingTips}}"></template>
+
+  <view class="content">
+    <view class="study_list_box">
+      <block wx:for="{{lists}}" wx:for-item="list" wx:key="">
+        <view class="study_list">
+          <view class="study_list_pannel">
+            <view class="study_list_title">{{list.productName}}</view>
+            <view class="study_list_filter">适合工种：{{list.workType}}</view>
+            <text class="study_list_desc">{{list.summary}}</text>
+          </view>
+          <view class="price_box">
+            <view class="price">
+              <view class="price_num">￥{{list.price}}
+                <view class="privilege" wx:if="{{list.isDiscount=='1'}}">优惠</view>
+              </view>
+              <text class="original">￥{{list.originalPrice}}</text>
+            </view>
+            <text class="status {{list.status.class}}" bindtap="onListTap" data-status="{{list.status.class}}"
+                  data-pid="{{list.productId}}">{{list.status.value}}
+            </text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <!--弹出层-->
+  <block wx:for="{{course}}" wx:key="" wx:for-item="items">
+    <view id="pop-1" class="car-popup" hidden="{{isHidden}}">
+      <view class="alert_tt">选择上课时间</view>
+      <view class="content-body signup_alert">
+        <form id="form-1">
+          <view class="select_list">
+            <view class="select">
+              <view class="selectItem">{{items.courseName}}</view>
+              <checkbox-group class="select_l">
+                <label>
+                  <!--<block wx:for="{{item.classTimes}}" wx:for-item="ct" wx:key="">-->
+                    <checkbox value="{{items.classTimes.templateId}}"/>
+                  {{items.classTimes.templateName}}
+                  <!--</block>-->
+                </label>
+              </checkbox-group>
+            </view>
+          </view>
+        </form>
+      </view>
+      <view class="button_box">
+        <button class="car-popup-cancel button" catchtap="onCancelTap">取消</button>
+        <button class="car-popup-ok button" catchtap="applyComplete">提交</button>
+      </view>
+    </view>
+  </block>
+</view>

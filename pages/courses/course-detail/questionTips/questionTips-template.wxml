@@ -1,0 +1,14 @@
+<template name="questionTipsTemplate">
+  <view class="tip-container">
+    <view class="tips">
+      <image src="/imgs/tips.png"></image>
+    </view>
+    <view class="tipTxt">模拟考试，必须在90分钟完成</view>
+    <view class="tipTxt">答题并交卷，中途不得暂停。</view>
+    <view class="tipSm">准备好了吗？加油咯！</view>
+    <view class="btnBox">
+      <view class="beginBtn btn" bindtap="startQs">开始答题</view>
+      <navigator class="returnBack btn" open-type="navigateBack">返回上页</navigator>
+    </view>
+  </view>
+</template>

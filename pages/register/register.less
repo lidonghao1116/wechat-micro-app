@@ -1,0 +1,98 @@
+@bgColor:#f8f8f8;
+page{
+  background: @bgColor;
+}
+
+.intBase{
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+input{
+  font-size: 32rpx;
+  height: 100%;
+  min-height: 100%;
+}
+.register-box{
+  background-color: #fff;
+  margin-top:24rpx;
+  margin-bottom: 100rpx;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 0 40rpx;
+  .register-item{
+    height:110rpx;
+    //line-height:110rpx;
+    &:not(:last-child){
+      border-bottom: 1px solid #dbdbdb;
+    }
+    label{
+      font-size: 32rpx;
+      display: block;
+      float: left;
+      width: 120rpx;
+      padding: 34rpx 0;
+      line-height: 40rpx;
+      color: #808080;
+    }
+    .imgCode{
+      padding: 32rpx 170rpx 30rpx 120rpx;
+      position: relative;
+    }
+    .msgCode{
+      .imgCode;
+    }
+    .imgBox{
+      position: absolute;
+      top: 18rpx;
+      width: 200rpx;
+      right: 0;
+      height: 72rpx;
+      border-radius: 2rpx;
+    }
+    #sms {
+      border: none;
+      .imgBox;
+      background-color: #ff7f3a;
+      position: absolute;
+      color: #ffffff;
+      opacity: .5;
+      font-size: 32rpx;
+    }
+  }
+}
+
+.phoneBox {
+  padding: 32rpx 0 30rpx 120rpx;
+}
+
+.register-btn{
+  padding: 0 20rpx;
+  position: relative;
+  #startBtn{
+    background-color: #ff7f3a;
+    -webkit-appearance: none;
+    color: #fff;
+    width: 100%;
+    border: none;
+    height: 98rpx;
+    line-height:98rpx;
+    border-radius: 4rpx;
+    font-size: 36rpx;
+    opacity: .5;
+  }
+  view{
+    text-align: center;
+    margin-top: 30rpx;
+    font-size: 24rpx;
+    color: #808080;
+    navigator{
+      display: inline-block;
+      color: #ff7f3a;
+    }
+  }
+}
+.clickable {
+  opacity: 1!important;
+}
+

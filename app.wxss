@@ -1,0 +1,6 @@
+page{
+  font-family: "华文黑体";
+  box-sizing: border-box;
+  background-color: #efeff4;
+  font-size: 28rpx;
+}

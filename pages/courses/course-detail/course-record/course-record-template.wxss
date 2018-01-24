@@ -1,0 +1,34 @@
+.record-container {
+  color: #808080;
+  background: #ffffff;
+}
+.record-container view {
+  height: 84rpx;
+  line-height: 84rpx;
+}
+.record-container view text {
+  display: inline-block;
+  text-align: center;
+}
+.record-container .date {
+  width: 46%;
+}
+.record-container .score {
+  width: 27%;
+}
+.record-container .useTime {
+  width: 27%;
+}
+.record-container .record-title {
+  background: #f7f7f7;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+}
+.record-container .record-content {
+  margin: 0 30rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+  font-size: 24rpx;
+}
+.record-container .record-content .score {
+  font-weight: bold;
+}

@@ -1,0 +1,13 @@
+<import src="/pages/template/head/head-template.wxml"/>
+<import src="/pages/template/questions/questions-template.wxml"/>
+<!--<import src="/pages/template/btn/btn-template.wxml"/>-->
+
+<view id="exercises">
+  <view class="head">
+    <template is="headTemplate" data="{{pageName,noBack}}"/>
+  </view>
+  <view class="question">
+    <template is="questionsTemplate" data="{{...questions,isDisabled,isChecked,testTemplate,isCorrect,correctTxt}}"></template>
+  </view>
+</view>
+

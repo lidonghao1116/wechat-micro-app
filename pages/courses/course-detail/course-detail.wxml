@@ -1,0 +1,78 @@
+<import src="course-record/course-record-template.wxml"/>
+<import src="course-exam/course-exam-template.wxml"/>
+<import src="course-video/course-video-template.wxml"/>
+
+<import src="../../template/head/head-template.wxml"/>
+
+<view class="course-detail-container">
+  <!--<view class="detail-head">
+    <image src="/imgs/icon/iconback.png" class="detail-nav" bindtap="onbackTap">
+    </image>
+    <text class="detail-title">{{courseName}}</text>
+    <view class="share-redPacket" catchtap="onShareMaskTap">
+      <image src="/imgs/redpacket.png"></image>
+      <text>分享红包</text>
+    </view>
+  </view>-->
+  <view class="head">
+    <template is="headTemplate" data="{{pageName,isSharePage}}"/>
+  </view>
+  <view class="detail-content">
+    <video src="http://1254037450.vod2.myqcloud.com/25c320c6vodtransgzp1254037450/e09df3019031868223065128570/tT5YUj3vHJIA.f20.mp4"
+           wx:if="{{isShowVideo}}"></video>
+    <image class="detail-banner" src="{{banner}}" wx:else></image>
+    <view class="detail-tab" bindtap="onDetailTap">
+      <text class="{{condition=='video'?'active-tab':''}}" id="video" wx:if="{{courseType!='02'}}">在线视屏
+      </text>
+      <block wx:if="{{courseType!='01'}}">
+        <text id="exam" class="{{condition=='exam'?'active-tab':''}}">答题练习</text>
+        <text id="record" class="{{condition=='record'?'active-tab':''}}">学习记录</text>
+      </block>
+    </view>
+    <scroll-view class="{{isOwn==0?'detail-innerContent':'detail-own-innerContent'}}" scroll-y="true">
+      <view hidden="{{condition=='exam'||condition=='record'}}" class="tempalteBox">
+        <template is="videoTemplate" data="{{videos,isOwn}}"/>
+      </view>
+      <view hidden="{{condition=='video'||condition=='record'}}" class="tempalteBox" id="examination">
+        <template is="examTemplate" data="{{...examInfo}}"/>
+      </view>
+      <view hidden="{{condition=='exam'||condition=='video'}}" class="tempalteBox" id="records">
+        <template is="recordTemplate" data="{{scores,hasScores,nothingTips}}"/>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="mask" hidden="{{noShowMask}}" catchtap="onCloseMaskTap" id="maskBuy">
+    <view class="popup" id="orderCourse">
+      <view id="close"></view>
+      <view class="popupText">
+        <text class="popupTitle">您将购买本课程的内容</text>
+        <text class="popupDesc">购买后不支持退订、转让，请再次确认</text>
+        <view class="codeBox">
+          <label for="invitationCode">邀请码:</label>
+          <input type="text" placeholder="(非必填)" id="invitationCode"/>
+        </view>
+      </view>
+      <view class="button">
+        <button id="cancel" catchtap="onCloseMaskTap">取消</button>
+        <button id="confirm">确定</button>
+      </view>
+    </view>
+  </view>
+  <view class="detail-foot" wx:if="{{isOwn==0}}">
+    <button class="inviteBtn">邀请好友赢红包</button>
+    <button class="buyBtn" bindtap="onBuyTap">购买：￥{{price}}/永久</button>
+  </view>
+  <view class="shareRedPacket-pop" hidden="{{noShareMask}}" catchtap="onCloseMaskTap" id="maskShare">
+    <view class="shareArrow">立即分享</view>
+    <image src="/imgs/redPacketPic.png"/>
+    <view class="activityRules">
+      <text class="rulesTitle">活动规则</text>
+      <view class="rulesBox">
+        <view class="ruleItem">示例1：A用户将【c课程】分享给好友，用户B通过A的链接进入到家策微课堂，并成功购买A分享的【c课程】，则A获得邀请奖励（微信现金红包，奖励金额为课程价格的10%，但最多不超过15元。）</view>
+        <view class="ruleItem">示例2：倘若用户B通过用户A的链接进入到家策微课堂，但并非购买A分享的【c课程】，而是购买了【d课程】，则A无法享受邀请奖励。</view>
+        <view class="ruleItem">不能使用自己的邀请码购买</view>
+        <view class="ruleItem">本次活动最终解释权归上海家策教育科技有限公司所有</view>
+      </view>
+    </view>
+  </view>
+</view>

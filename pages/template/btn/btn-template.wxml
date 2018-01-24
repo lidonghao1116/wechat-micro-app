@@ -1,0 +1,33 @@
+<template name="btnTestTemplate" >
+  <view class="row scoresBtn">
+    <view class="answerTips">
+      <view class="correct" wx:if="{{isCorrect==1}}">正确，好棒哦 !</view>
+      <view class="wrong" wx:elif="{{isCorrect==0}}">错误，答案：{{correctTxt}}</view>
+    </view>
+    <view>
+      <view class="col-50">
+        <button class="button btnExit white_btn" bindtap="onQsExit">退出练习</button>
+      </view>
+      <view class="col-50">
+        <button class="button button-fill" bindtap="onNextTap">下一题</button>
+      </view>
+    </view>
+  </view>
+</template>
+<template name="btnQsTemplate">
+  <view class="button_box">
+    <view class="button button-big button-fill" wx:if="{{!isSave}}" bindtap="onNextTap">下一题</view>
+    <view class="button button-big button-fill" wx:else bindtap="onSaveTap">交卷</view>
+  </view>
+</template>
+
+<template name="btnScoreTemplate">
+  <view class="row scoresBtn">
+    <view class="col-50">
+      <navigator class="button button-fill" url="/pages/courses/course-detail/answerSheets/answerSheets">查看答题卡</navigator>
+    </view>
+    <view class="col-50">
+      <navigator class="button white_btn" url="/pages/courses/course-detail/course-detail?id={{courseId}}">返回首页</navigator>
+    </view>
+  </view>
+</template>

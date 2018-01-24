@@ -1,0 +1,6 @@
+<template name="nothingTemplate">
+  <view class="nothingBox">
+    <image src="/imgs/wushuju.png"></image>
+    <view class="no_info">{{nothingTips}}</view>
+  </view>
+</template>

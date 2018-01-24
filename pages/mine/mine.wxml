@@ -1,0 +1,24 @@
+<view class="mine-container">
+  <view class="mine-top">
+    <navigator id="myInfoLink" url="myInfo/myInfo">
+      <image src="{{userInfo.avatarUrl}}" class="mine-avatar"></image>
+      <text class="mine-detail">查看个人详情</text>
+    </navigator>
+  </view>
+  <view class="main-content">
+    <navigator class="main-box xxdj" url="studyList/studyList">
+      <text class="xuexi">学习登记</text>
+    </navigator>
+    <navigator class="main-box pxjl" url="trainRecords/trainRecords">
+      <text>培训记录</text>
+    </navigator>
+    <navigator class="main-box wdzs" url="cert/cert">
+      <text>我的证书</text>
+    </navigator>
+  </view>
+  <view class="main-content last-list">
+    <navigator class="main-box wdhb" url="redPackets/redPackets">
+      <text>我的红包</text>
+    </navigator>
+  </view>
+</view>

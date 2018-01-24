@@ -1,0 +1,32 @@
+<view class="register-container">
+  <!--<view>手机验证</view>-->
+  <view class="register-box">
+    <view class="register-item">
+      <label>手机号</label>
+      <view class="phoneBox">
+        <input placeholder="请输入手机号" maxlength="11" class="intBase" id="mobileCode" bindinput="getValue" name="mobile" bindblur="registerConfirm"/>
+      </view>
+    </view>
+    <view class="register-item">
+      <label>图形码</label>
+      <view class="imgCode">
+        <input type="text" placeholder="请输入右侧图形码" minlength="4" maxlength="8" id="captchaCode" bindinput="getValue" bindblur="registerConfirm"/>
+        <image src="{{imgUrl}}" class="imgBox" bindtap="captchaCode"></image>
+      </view>
+    </view>
+    <view class="register-item">
+      <label>验证码</label>
+      <view class="msgCode">
+        <input type="number" placeholder="请输入短信验证码" maxlength="6" id="smsCode" bindblur="registerConfirm" bindinput="getValue"/>
+        <button id="sms" bindtap="checkSmsCode" disabled="{{!smsClickable}}" class="{{smsClickable?'clickable':''}}">{{smsTxt}}</button>
+      </view>
+    </view>
+  </view>
+  <view class="register-btn">
+    <button id="startBtn" disabled="{{!startClickable}}" class="{{startClickable?'clickable':''}}" bindtap="onStartTap">开始</button>
+    <view>
+      点击开始，即表示已阅读并同意
+      <navigator url="agreement">《用户服务协议》</navigator>
+    </view>
+  </view>
+</view>

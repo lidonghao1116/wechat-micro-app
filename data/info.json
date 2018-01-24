@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "code": 0,
+  "msg": "成功",
+  "toUrl": null,
+  "jsonData": {
+    "courseId": 41,
+    "courseName": "母婴护理【上岗】",
+    "image": null,
+    "courseType": "03",
+    "price": 120.0,
+    "fitService": "月嫂",
+    "sortNo": 1,
+    "summary": "0基础课程",
+    "creatTime": "2017-07-27 00:00:00",
+    "reSign": "0",
+    "status": "01",
+    "courseTime": "120",
+    "judgeCount": "1",
+    "judgeScore": "1",
+    "singleCount": "1",
+    "singleScore": "1",
+    "multiCount": "1",
+    "multiScore": "2",
+    "isOwn": 0
+  }
+}

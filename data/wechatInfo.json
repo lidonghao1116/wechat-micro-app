@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "code": 0,
+  "msg": "成功",
+  "toUrl": null,
+  "jsonData": {
+    "openId": "oC1aRuNQaqpMG9Dmr1U1LWsZDtI0",
+    "nick": "龙哥",
+    "headImgUrl": "http://wx.qlogo.cn/mmopen/1QT1ZldaMN2ViaNSTR8W3Goria5uLZJrRE87ncsfxufAeQyiaibgKcNmouXTMblXGm0XnoicqObokxtJ0hIpIboSHy9FsVnt0iaszY/0",
+    "sex": "1",
+    "accessToken": "B5hrcv2ayTmx9tyxXs6zRW_aEAZevBwA6QUVASOIyd_6aAvaGrk9da5wmUlISHktupTj4YsmzXrnkeBkWi8_jEEOP4lvPLEGx6b7KAHpnD0",
+    "refreshToken": "B5hrcv2ayTmx9tyxXs6zRVnWsg_iM-9AZf3QRkBVz1GwfZ3U4pbOt-jmFD4SLDJJnAoRESLbDMCXrxd_3HqctKtGslc6ArQDoD9hyNu4ZH8",
+    "expiringTime": "2017-08-01 21:09:49"
+  }
+}

@@ -1,0 +1,97 @@
+page{
+  background: #efeff4;
+}
+
+.mine-container{
+  .mine-top{
+    height:280rpx;
+    background: linear-gradient(to right, #ff8447, #ff9f46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #myInfoLink{
+      display: flex;
+      flex-direction: column;
+    }
+    .mine-avatar{
+      width:120rpx;
+      height:120rpx;
+      border-radius: 100%;
+      margin:52rpx auto 30rpx;
+    }
+    .mine-detail{
+      color: #ffffff;
+      font-size: 28rpx;
+    }
+  }
+  .main-content{
+    background: #ffffff;
+    padding:0 20rpx;
+    .main-box{
+      position: relative;
+      height:98rpx;
+      line-height:98rpx;
+      &:not(:last-child){
+        border-bottom: 1px solid #f0f0f0;
+      }
+      text{
+        margin-left:82rpx;
+        font-size: 30rpx;
+        color: #333;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top:0;
+        background: url("/imgs/icon/righticon.png")no-repeat center center;
+        background-size: contain;
+        width:16rpx;
+        height:98rpx;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        top:0;
+        height:98rpx;
+      }
+    }
+    .xxdj{
+      &:before{
+        background: url("/imgs/icon/iconxuexi.png")no-repeat center center;
+        background-size: contain;
+        left: 20rpx;
+        width:33rpx;
+
+      }
+    }
+    .pxjl{
+      &:before{
+        background: url("/imgs/icon/iconpeixun.png")no-repeat center center;
+        background-size: contain;
+        left:14rpx;
+        width:40rpx;
+      }
+    }
+    .wdzs{
+      &:before{
+        background: url("/imgs/icon/iconzhengshu.png")no-repeat center center;
+        background-size: contain;
+        left:20rpx;
+        width:33rpx;
+      }
+    }
+    .wdhb{
+      &:before{
+        background: url("/imgs/icon/iconhongbao.png")no-repeat center center;
+        background-size: contain;
+        left:20rpx;
+        width:32rpx;
+      }
+    }
+  }
+}
+
+.last-list{
+  margin-top:24rpx;
+}

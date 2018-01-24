@@ -1,0 +1,36 @@
+<import src="/pages/template/head/head-template.wxml"/>
+<import src="/pages/template/btn/btn-template.wxml"/>
+
+<view id="score">
+  <view class="head">
+    <template is="headTemplate" data="{{pageName,noBack}}"/>
+  </view>
+  <view class="score">
+    <view class="center">
+      <view>
+        <image src="/imgs/complete_btn.png"/>
+      </view>
+      <view class="scores-title">恭喜你完成答题！</view>
+      <view class="hx">成绩单</view>
+    </view>
+    <view class="scores-lists">
+      <view class="row">
+        <view class="col-40 right">答题科目</view>
+        <view class="col-60 left">母婴护理员【上岗】</view>
+      </view>
+      <view class="row">
+        <view class="col-40 right">答题时长</view>
+        <view class="col-60 left">1时22分35秒</view>
+      </view>
+      <view class="row">
+        <view class="col-40 right">成绩</view>
+        <view class="col-60 left">
+          <text style="color: #f0854b">0分</text>
+        </view>
+      </view>
+    </view>
+    <view>
+      <template is="btnScoreTemplate" data="{{courseId}}"/>
+    </view>
+  </view>
+</view>
